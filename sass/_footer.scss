@@ -1,0 +1,102 @@
+.pie-pagina{
+    width: 100%;
+    background-color: #ff9b6c;
+    border-top-left-radius: 25% ;
+    border-top-right-radius: 25% ;
+}
+//grup1
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+//figu1
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-1 .box .a-viejo .viejo-footer {
+
+width: 250px;
+height: 250px;
+border-radius: 50%;
+border: solid white;
+
+}
+//letras footer
+.letrasdefooter{
+    
+    font-size: 10px;
+}
+////icons
+.prueba-hover{
+    transition: transform 250ms;
+    will-change: transform ;
+    
+}
+////hover-icons
+.prueba-hover:hover,
+.prueba-hover:focus{
+    transform: translate(-5px, -10px) ;
+}
+////viejo-footer
+.viejo-footer{
+    transition: transform 2500ms;
+    will-change: transform ;   
+}
+///viejofooterhover
+.viejo-footer:hover{
+    animation-duration: 1600ms;
+    animation-name: viejulis;
+    animation-timing-function: ease-in;
+}
+
+@keyframes viejulis{
+    30%{
+        transform: translate(-5px, -10px );
+    }
+    40%{
+        transform: rotateY(360deg);
+    }
+    50%{
+        
+    }
+
+}
+
+

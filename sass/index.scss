@@ -1,0 +1,111 @@
+//*,body,etc
+@use 'basico';
+//header
+@use 'header';
+/*:::::Pie de Pagina*/
+@use 'footer';
+//inhtml
+@use 'inhtml';
+//servhtml
+@use 'servhtml';
+//fonts
+@use 'fonts';
+//nosohtml
+@use 'nosohtml';
+//contachtml
+@use 'contachtml';
+//pregfrecuhtml
+@use 'pregfrecuhtml';
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///agregados de antiguas versiones////
+#p1 {
+    margin-right: 80mm;
+    position: absolute;
+    margin-left: 90mm;
+    margin-right: 100mm;
+}
+li {
+    list-style: none
+}
+.carrusel-de-hamburguesas {
+    display: flex;
+    width: 100mm;
+    height: 100mm;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    margin-top: 10mm;
+    margin-left: 20mm;
+}
+.carrusel-de-hamburguesas img {
+    scroll-snap-align: center;
+}
+.hamburguer-item {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#hamburguesa-sombra {
+    box-shadow: 5px 5px 5px #999;
+    position: absolute;
+
+}
+.menu-lindo {
+    position: relative;
+    display: inline;
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+}
+.ul-lindo {
+    align-items: center;
+    height: 32px;
+    list-style: none;
+    padding: 0;
+    margin-left: 10mm;
+}
+.ass {
+    text-decoration: none;
+}
+#service {
+    position: absolute;
+
+    flex: auto;
+
+}
+#p-ser {
+
+    margin-left: 90mm;
+
+}
+#viejochef {
+    position: absolute;
+    margin-left: 330mm;
+    width: 40mm;
+    height: 40mm
+}
+.a-lindo {
+
+
+    color: antiquewhite;
+}
+.hamb {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border-image: auto;
+    border: black;
+
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+
+}
+.p-lindo {
+    margin: auto;
+    ;
+
+}
+////////////////////////ayudas
+/// reflejo = -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0),rgb(0,0,0)) ;

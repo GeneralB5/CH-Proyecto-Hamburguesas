@@ -1,0 +1,190 @@
+.container-servicio-inicio {
+    padding-top: 30px;
+}
+
+//////tremendoflex
+section {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    padding-top: 30px;
+    border-radius: 25%;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+//////div-servicios-telfo
+.div-servicios-telfo {
+    background-color: #b3b3b3;
+    border-radius: 10%;
+    border: 1px solid #000;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10px;
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+///////p
+.p-servicio {
+    font-size: 20px;
+    font-family: BRUSHSCI;
+    font-style: BRUSHSCI;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+//////h2
+.h2-servicios {
+    text-decoration: underline;
+    font-family: BRUSHSCI;
+    font-style: BRUSHSCI;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+////////h3ser
+.h3-servicio {
+    font-size: 40px;
+    font-family: BRUSHSCI;
+    font-style: BRUSHSCI;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/////////////////rating//////////////////
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    --stroke: #666;
+    --fill: #ffc73a;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.rating input {
+    appearance: unset;
+}
+
+.rating label {
+    cursor: pointer;
+}
+
+.rating svg {
+    width: 3rem;
+    height: 3rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+    from {
+        stroke-dashoffset: 24;
+    }
+}
+
+.rating label:hover svg {
+    stroke: var(--fill);
+}
+
+.rating input:checked~label svg {
+    transition: 0s;
+    animation: idle 4s linear infinite, yippee 0.75s backwards;
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-opacity: 0;
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+}
+
+@keyframes yippee {
+    0% {
+        transform: scale(1);
+        fill: var(--fill);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+        stroke: var(--stroke);
+        stroke-dasharray: 10;
+        stroke-width: 1px;
+        stroke-linejoin: bevel;
+    }
+
+    30% {
+        transform: scale(0);
+        fill: var(--fill);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+        stroke: var(--stroke);
+        stroke-dasharray: 10;
+        stroke-width: 1px;
+        stroke-linejoin: bevel;
+    }
+
+    30.1% {
+        stroke: var(--fill);
+        stroke-dasharray: 0;
+        stroke-linejoin: miter;
+        stroke-width: 8px;
+    }
+
+    60% {
+        transform: scale(1.2);
+        fill: var(--fill);
+    }
+}
+
+.rating-div {
+    padding-top: 30px;
+
+}
+
+/////////////////////////////////////////////media/////////////
+@media (max-width:530px) {
+    .p-servicio {
+        font-size: 23px;
+    }
+
+    .h2-servicios {
+        font-size: 50px;
+    }
+
+    .h3-servicio {
+        font-size: 35px;
+    }
+
+    .div-servicios-telfo {
+        width: 400px;
+    }
+}

@@ -1,0 +1,48 @@
+/////divpregfrecu
+.preguntas-frecuentes-div{
+background-color: aliceblue;
+text-align: center;
+justify-content:center ;
+display: grid;
+min-width: 300px;
+max-width: 700px ;
+border-radius: 5%;
+margin: 10px;
+
+background: linear-gradient( to right, rgb(255, 141, 10), rgba(158, 111, 23, 0.658), rgba(255, 255, 10, 0.712));
+animation: fondo-grandient 5s infinite ease-in-out;
+background-size: 400% 400%;
+}
+//////divcenter
+.div-center-preg{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+////p-preg-frec
+.p-preg-frec{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+////h2fenomenal
+.h2fenomenal{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+
+////////////////////////////////////////////keyframe//////////////////////////////////
+
+@keyframes fondo-grandient {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
