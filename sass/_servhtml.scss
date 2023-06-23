@@ -1,7 +1,6 @@
 .container-servicio-inicio {
     padding-top: 30px;
 }
-
 //////tremendoflex
 section {
     display: flex;
@@ -10,23 +9,19 @@ section {
     padding-top: 30px;
     border-radius: 25%;
 }
-
 section img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
     transition: .5s ease;
-
 }
-
 section img:hover {
     cursor: crosshair;
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
 }
-
 //////div-servicios-telfo
 .div-servicios-telfo {
     background-color: #b3b3b3;
@@ -41,7 +36,6 @@ section img:hover {
         rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
         rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
 ///////p
 .p-servicio {
     font-size: 20px;
@@ -53,7 +47,6 @@ section img:hover {
     margin-left: 7px;
     margin-right: 7px;
 }
-
 //////h2
 .h2-servicios {
     text-decoration: underline;
@@ -65,7 +58,6 @@ section img:hover {
     margin-left: 7px;
     margin-right: 7px;
 }
-
 ////////h3ser
 .h3-servicio {
     font-size: 40px;
@@ -75,7 +67,6 @@ section img:hover {
     justify-content: center;
     text-align: center;
 }
-
 /////////////////rating//////////////////
 .rating {
     display: flex;
@@ -87,15 +78,12 @@ section img:hover {
     text-align: center;
     margin-bottom: 10px;
 }
-
 .rating input {
     appearance: unset;
 }
-
 .rating label {
     cursor: pointer;
 }
-
 .rating svg {
     width: 3rem;
     height: 3rem;
@@ -107,17 +95,14 @@ section img:hover {
     animation: idle 4s linear infinite;
     transition: stroke 0.2s, fill 0.5s;
 }
-
 @keyframes idle {
     from {
         stroke-dashoffset: 24;
     }
 }
-
 .rating label:hover svg {
     stroke: var(--fill);
 }
-
 .rating input:checked~label svg {
     transition: 0s;
     animation: idle 4s linear infinite, yippee 0.75s backwards;
@@ -128,7 +113,6 @@ section img:hover {
     stroke-linejoin: miter;
     stroke-width: 8px;
 }
-
 @keyframes yippee {
     0% {
         transform: scale(1);
@@ -140,7 +124,6 @@ section img:hover {
         stroke-width: 1px;
         stroke-linejoin: bevel;
     }
-
     30% {
         transform: scale(0);
         fill: var(--fill);
@@ -151,39 +134,31 @@ section img:hover {
         stroke-width: 1px;
         stroke-linejoin: bevel;
     }
-
     30.1% {
         stroke: var(--fill);
         stroke-dasharray: 0;
         stroke-linejoin: miter;
         stroke-width: 8px;
     }
-
     60% {
         transform: scale(1.2);
         fill: var(--fill);
     }
 }
-
 .rating-div {
     padding-top: 30px;
-
 }
-
 /////////////////////////////////////////////media/////////////
 @media (max-width:530px) {
     .p-servicio {
         font-size: 23px;
     }
-
     .h2-servicios {
         font-size: 50px;
     }
-
     .h3-servicio {
         font-size: 35px;
     }
-
     .div-servicios-telfo {
         width: 400px;
     }

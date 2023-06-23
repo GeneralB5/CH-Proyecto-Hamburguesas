@@ -11,9 +11,10 @@
     <meta name="keywords" content="hamburguesas, stacker, hamburguer, burguer, burgas, cheddar, queso">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
-<body>
+<body class="main-login">
     <header>
         <div class="  container  ">
             <div class="row">
@@ -26,56 +27,54 @@
                 </div>
             </div>
         </div>
-        <nav class="nav-lindo">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class=" a-lindo nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class=" a-lindo  nav-link" href="./servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class=" a-lindo nav-link  " href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class=" a-lindo nav-link " href="./contactos.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <div class="div-center-preg">
-            <div class="preguntas-frecuentes-div">
-                <ul>
-                    <h2 class="h2fenomenal">¿Donde sacamos la mercancia?</h2>
-                    <p class="p-preg-frec">Nosotros adquirimos nuestros productos de distintos tipos de empresas las
-                        cuales son totalmente confiafles
-                        y venimos manteniendo desde hace unos cuantos años, nuestros proovedores son de alta calidad y
-                        reconocidos
-                        mundialmente.
-                    </p>
-                </ul>
+        <div class="div-de-img-login" >
+            <img class="logo-login-chef" src="../img/loginmain/chef.log.logo.png" alt="Logo-chef">
+        </div>
+        <div class="divcenterloginprincipal">
+        <div class="div-center-login">
+            <div class="div-login">
+                <form class="formcontenedor-login" action="">
+                    <h1 class="h1-login">log-in</h1>
+                    <input class="input-margin input-color" type="name" placeholder="Username">
+                    <div>
+                        <input class="input-margin input-color " type="password" placeholder="Password">
+                    </div>
+                    <label class="container1">
+                        <input checked="checked" type="checkbox">
+                        <div class="checkmark"></div>
+                      </label>
+                    <label class="label-terminos" for="container1">Acepto terminos de contrato</label>
+                      <div>
+                        <a class="abottom-login" href="../index.html">Loguearse</a>
+                    </div>
+                </form>
             </div>
-            <div class="preguntas-frecuentes-div">
-                <ul>
-                    <h1 class="h2fenomenal">¿Somos una tienda de solo delivery?</h1>
-                    <p class="p-preg-frec">No somos solo delivery, tenemos mucha variedad de locales en distintos puntos
-                        de Buenos Aires, pero tenemos este metodo online el cual nos permite vender las hamburguesas mas
-                        facil.
-                    </p>
-                </ul>
-            </div>
-            <div class="preguntas-frecuentes-div">
-                <ul>
-                    <h2 class="h2fenomenal">¿Tienen reembolos?</h2>
-                    <p class="p-preg-frec">No contamos con un reembolso ya habiendo comprado el producto, pero en el
-                        caso de un
-                        producto fallido o faltante, debera llamar a uno de nuestros locales y comunicar cual es su
-                        problema.
-                    </p>
-                </ul>
+            <div class="div-login2">
+                <form class="formcontenedor-login" action="">
+                    <h2 class="h1-login">Registrarse</h2>
+                    <div>
+                    <input class="margin-registe input-color" type="name" placeholder="Username">
+                    <input class="margin-registe input-color" type="email" placeholder="Email">
+                    <input class="margin-registe input-color" type="email" placeholder="Repetir email">
+                    <input class="margin-registe input-color" type="password" placeholder="Contraseña">
+                    <input class="margin-registe input-color" type="password" placeholder="Repetir contraseña">
+                </div>
+                    <div class="cont1">
+                    <label class="container1">
+                        <input checked="checked" type="checkbox">
+                        <div class="checkmark"></div>
+                      </label>
+                    <label class="label-terminos" for="cont1">Acepto terminos de contrato</label>
+                </div>
+                      <div>
+                        <a class="abottom-login" href="../index.html">Registrarse</a>
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
     </main>
     <footer class="pie-pagina">
         <div class="grupo-1">
@@ -99,9 +98,6 @@
                     <a href="#"><img class="prueba-hover" src="../icons/icons8-twitter.svg" alt="twitter"></a>
                     <a href="#"><img class="prueba-hover" src="../icons/icons8-youtube.svg" alt="youtube"></a>
                 </div>
-                <div class="div-logueate-footer">
-                <a class="alogin-footer" href="./login.html"> Logueate</a>
-            </div>
             </div>
         </div>
     </footer>

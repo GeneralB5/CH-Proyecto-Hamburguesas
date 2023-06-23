@@ -1,19 +1,14 @@
 /////h2
 .h2-nos {
-
     font-size: 50px;
-
     background: linear-gradient(rgb(44, 13, 13), rgba(82, 82, 212, 0.568));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 10px;
     margin-top: 10px;
-
 }
-
 ////parra
 .p-nos {
     font-size: 25px;
@@ -21,7 +16,6 @@
     margin-left: 20px;
     margin-right: 30px;
 }
-
 ////div 1
 .div-prime {
     display: grid;
@@ -32,13 +26,10 @@
     border: 5px solid red ;
     border: double 5px transparent ;
     background-image: linear-gradient(white, white), 
-    linear-gradient(90deg, yellow, orange, brown);
-    ;
+    linear-gradient(90deg, yellow, orange, brown); 
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
-
-
 ///// div 2
 .div-secun {
     display: grid;
@@ -53,7 +44,6 @@
     ;
     background-origin: border-box;
     background-clip: content-box, border-box;
-
 }
 //////imgenes
 .imgenes-nosotros{
@@ -72,4 +62,12 @@ will-change: transform ;
 .imgenes-nosotros:hover,
 .imgenes-nosotros:focus{
     transform: translate(-5px, -10px) ;
+}
+////////////////media
+@media (max-width:530px){
+    .imgenes-nosotros{
+width: 270px;
+height: 330px;
+background-position: center;
+    }
 }

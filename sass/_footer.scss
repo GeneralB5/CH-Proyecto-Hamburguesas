@@ -22,19 +22,15 @@
     justify-content: center;
     align-items: center;
 }
-
 .pie-pagina .grupo-1 .box figure img{
     width: 250px;
 }
-
 .pie-pagina .grupo-1 .box h2{
     color: #fff;
-    
     font-size: 20px;
 }
 .pie-pagina .grupo-1 .box p{
     color: #efefef;
-    
 }
 .pie-pagina .grupo-1 .red-social a{
     display: inline-block;
@@ -51,23 +47,19 @@
     color: aqua;
 }
 .pie-pagina .grupo-1 .box .a-viejo .viejo-footer {
-
 width: 250px;
 height: 250px;
 border-radius: 50%;
 border: solid white;
-
 }
 //letras footer
 .letrasdefooter{
-    
     font-size: 10px;
 }
 ////icons
 .prueba-hover{
     transition: transform 250ms;
-    will-change: transform ;
-    
+    will-change: transform ;   
 }
 ////hover-icons
 .prueba-hover:hover,
@@ -85,7 +77,41 @@ border: solid white;
     animation-name: viejulis;
     animation-timing-function: ease-in;
 }
-
+///div-logueate
+.div-logueate-footer{
+    margin-top: 54px;
+}
+.alogin-footer{
+    display: block;
+    width: 100px;
+    text-align: center;
+    height: 39px;
+    background-color: rgb(138, 35, 138);
+    border: solid rgb(219, 128, 219) 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(235, 236, 236);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.alogin-footer:hover {
+    background-color: transparent;
+    border: solid rgb(85, 16, 85) 2px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    color: rgb(136, 64, 170);
+    text-decoration: none;
+    border-radius: 10px;
+}
+////media
 @keyframes viejulis{
     30%{
         transform: translate(-5px, -10px );
@@ -93,10 +119,4 @@ border: solid white;
     40%{
         transform: rotateY(360deg);
     }
-    50%{
-        
-    }
-
 }
-
-
